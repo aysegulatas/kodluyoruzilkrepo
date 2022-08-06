@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="ressama ait bütün sanat eserleri, sanatsal resimler, resim, resimler, sanat">
+        <meta name="keywords" content="resim,sanat,sanatçı,satın alma, resimler,">
+        <meta name="author" content="AYŞEGÜL ATAŞ">
+        <title> SANAT MAĞAZASI </title>
+        <link rel="shortcut icon" href="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\logo1.ico" / >
+       <style>
+            .header{
+                background-color:#a7a7a7;
+                opacity:0.4;
+                filter:alpha(opacity=100);
+                position: absolute;
+                width: 1345px;
+                height: 690px;
+                margin-left: -8px;
+                margin-top: -10px;
+            }
+            #page{
+                height: 700px;
+                width: 1346px;
+                margin-top: -10px;
+                margin-left: -5px;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+                margin-bottom: -10px;
+            }
+            #logo {
+                width: 100px;
+                height: 100px;
+                border-radius: 80px;
+                margin-top: 120px;
+                margin-left: 300px;
+                position: absolute;
+            }
+            #line{
+                color:black;
+                position: absolute;
+                font-size: 70px;
+                margin-top: 285px;
+                margin-left: 526px;
+            }
+            #name{
+                color:black;
+                position: absolute;
+                font-size: 20px;
+                margin-top: 370px;
+                margin-left: 565px;
+            }
+            #nav1{
+                background-color: black;
+                opacity:0.5;
+                filter:alpha(opacity=100);
+                position: absolute;
+                position: fixed;
+                z-index: 1;
+                margin-top: -5px;
+                width: 1345px;
+                height: 50px;
+                margin-left: -8px;
+                
+            }
+            nav{
+                
+                position: absolute;
+                position: fixed;
+                font-size: 25px;
+                margin-top: 5px;
+                margin-left: 310px;
+                word-spacing: 150px;
+                z-index: 1;
+                
+            }
+            a{
+                color: rgb(255, 255, 255); 
+                text-decoration: none;
+            }
+            a:hover{
+                color: red;
+            }
+            #arrow{
+                background-color: black;
+                opacity:0.5;
+                filter:alpha(opacity=100);
+                position: absolute;
+                position: fixed;
+                width: 85px;
+                height: 80px;
+                margin-left: 1251px;
+                margin-top: 578px;
+                z-index: 1;
+            }
+            #arrow1{
+                color:#ffffff; 
+                position: absolute;
+                position: fixed;
+                z-index: 1;
+                margin-left: 1255px;
+                margin-top: 575px;
+                z-index: 1;
+                font-family:Courier New;
+                font-size: 130px;
+            }
+            #arrow1:hover{
+                color: black;
+            }
+            #login{
+                position: absolute;
+                z-index: 1;
+                width: 129px;
+                height: 50px;
+                margin-left: 1155px;
+                margin-top: -5px;
+                position: fixed;
+                font-size: 20px;
+            }
+            #login1:hover{
+                color: black;
+            }
+            #login1{
+                margin-left: 15px;
+            }
+            #spt{
+                position: absolute;
+                z-index: 1;
+                width: 50px;
+                height: 50px;
+                margin-left: 1285px;
+                margin-top: -5px;
+                position: fixed;
+            }
+            #spt1{
+                margin-top: 5px;
+                margin-left: 5px;
+            }
+            #message{
+                background-color: black;
+                opacity:0.5;
+                filter:alpha(opacity=100);
+                position: absolute;
+                z-index: 1;
+                width: 60px;
+                height: 55px;
+                position: fixed;
+                margin-top: 600px;
+                margin-left: 10px;
+                border-radius: 50px;
+            }
+            #article{
+                background-color:#ffffff;
+                position: absolute;
+                width: 1345px;
+                height: 2700px;
+                margin-left: -8px;
+                margin-top: 680px;
+            }
+            #explanation{
+                margin-top: 50px;
+                text-align: center;
+                font-size: 90px;
+                font-family: Courier New;
+            }
+            #ex1{
+                margin-top: -80px;
+                text-align: center;
+                font-size: 25px;
+                font-family: bring street art into your home ;
+            }
+            .urunler{
+                position: absolute;
+                width: 430px;
+                height: 255px;
+            }
+            #k1{
+                float: left;
+                margin-left: 10px;
+            }
+            #k2{
+                float: left;
+                margin-left: 457px;
+            }
+            #k3{
+                float: left;
+                margin-left: 905px;
+            }
+            #k4{
+                float: left;
+                margin-left: 10px;
+                margin-top: 380px;
+            }
+            #k5{
+                float: left;
+                margin-left: 457px;
+                margin-top: 380px;
+            }
+            #k6{
+                float: left;
+                margin-left: 905px;
+                margin-top: 380px;
+            }
+            #k7{
+                float: left;
+                margin-left: 10px;
+                margin-top: 770px;
+            }
+            #k8{
+                float: left;
+                margin-left: 457px;
+                margin-top: 770px;
+            }
+            #k9{
+                float: left;
+                margin-left: 905px;
+                margin-top: 770px;
+            }
+            .tanıtım{
+                position: absolute;
+                font-family: Calibri (Gövde);
+                color: rgb(53, 52, 52);
+                margin-top: 265px;
+                font-size: 15px;
+                line-height: 1.8;
+            }
+            .gkutu{
+                width: 430px;
+                height: 40px;
+                background-color: #fffafa;
+                position: absolute;
+                transition: all -30s ease-in-out;
+                cursor: pointer;  
+                color: #ffffff;
+                text-align: center;
+                margin-top: 322px;
+            }
+            .gkutu:hover {
+                background-color: #3a3a3a;
+                color: #ffffff;
+            }
+            #hakkında{
+                background-color:#ffffff;
+                position: absolute;
+                width: 1345px;
+                height: 700px;
+                margin-top: 1170px;
+                
+            }
+            #iletişim{                
+                background-color:#ffffff;
+                position: absolute;
+                width: 1345px;
+                height: 600px;
+                margin-top: 1900px;
+            }
+            .form{
+                margin-left: 458px;
+                border-color:black;
+            }
+            .formk{
+                width: 420px; 
+                height: 25px;
+                border: #424242;
+                border-style: solid;
+                border-width: 2px;
+                transition: all -30s ease-in-out;
+                cursor: pointer;
+                
+            }
+            .formk:hover{
+                border:#424242;
+                border-style: solid;
+                border-width: 4px;
+            }
+            input[type=submit]{
+                width: 110px;
+                height: 35px;
+                margin-left: 778px;
+                background-color: #424242;
+                color:#e0ebeb;
+                cursor: pointer;
+                border:none;
+            }
+            input[type=submit]:hover{
+                background-color:slategrey;
+            }
+            #mail{
+                color: black;
+            }
+            #mail:hover{
+                color: black;
+            }
+            .footer{
+                background-color:#ffffff;
+                position: absolute;
+                width: 1345px;
+                height: 120px;
+                margin-left: -8px;
+                margin-top: 3300px;
+            }
+            .fibuton{
+                width: 30px; 
+                height:30px;
+                margin-top: 50px;
+                padding: 8px;
+            }
+            #cizgi{
+                color:black;
+                position: absolute;
+                font-size: 39px;
+                margin-top: -10px;
+                margin-left: 364px;
+                
+            }
+            
+        </style>
+
+
+    </head>
+    <body>
+        <div id="page">
+            <img id="page" src="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\sayfa.jpg" / >
+        </div>
+        
+        <div class="header"></div>
+        <header>
+            <div id="logo"> 
+                <img id="logo" src="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\logo1.jpg" / >
+            </div>
+            <p id="line" >_______</p>
+            <p id="name"> <b> SANAT MAĞAZASI</b> </p>
+            
+            <div id="nav1"></div>
+            <nav>
+                <a href="#article">MAĞAZA|</a>
+                <a href="#hakkında">HAKKINDA|</a>
+                <a href="#iletişim">İLETİŞİM|</a>
+            </nav> 
+            
+            <div id="login">
+                <a id="login1" href="">
+                    <img style="width: 30px; height:30px; margin-top: 10px; text-align: center; border-radius: 80px; " src="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\kullanıcı.png" / >
+                    <p style="text-align: center; margin-top: -30px; margin-left: 40px; color: #ffffff; " >GİRİŞ</p> 
+                </a>
+            </div>
+
+            <div id="arrow"> </div>
+                <a id="arrow1" href="#" > ^ </a>
+            
+
+            <div id="spt">
+                <a href="">
+                    <img id="spt1" src="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\spt.png" style="width: 40px; height:40px;  text-align: center; border-radius: 80px; "> 
+                </a>
+            </div>
+
+            <div id="message"> </div>
+                <a id="message1" href="" > 
+                    <img src="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\mesaj.png" style=" width:50px; height:45px; border-radius: 80px; position: fixed; z-index: 1; margin-top: 605px; margin-left: 15px; " / >
+                </a>
+            
+
+        </header>
+
+        <article id="article">
+            <p id="explanation">
+                artworks. 
+            </p>
+            <p id="ex1">
+                bring street art into your home.
+            </p>
+
+            <div class="urunler" id="k1">
+                <a href="sayfa2.html">
+                    <img class="urunler" src="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\1.jfif" / >
+                    <p class="tanıtım"> I'M AN ARTWORK <br> $155.00 </p>
+                    
+                </a>
+                <a href="">
+                    <div class="gkutu" >
+                        <p class="sepet"> SEPETE EKLE </p>
+                    </div>
+                </a>
+                
+            </div>
+
+            <div class="urunler" id="k2">
+                <a href="sayfa3.html">
+                    <img class="urunler" src="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\2.jfif" / >
+                    <p class="tanıtım"> I'M AN ARTWORK <br> $155.00 </p>
+                </a>
+                <a href="">
+                    <div class="gkutu" >
+                        <p class="sepet"> SEPETE EKLE </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="urunler" id="k3">
+                <a href="sayfa4.html"> 
+                    <img class="urunler" src="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\3.jpg" / >
+                    <p class="tanıtım"> I'M AN ARTWORK <br> $155.00 </p>
+                </a>  
+                <a href="">
+                    <div class="gkutu" id="g1">
+                        <p class="sepet"> SEPETE EKLE </p>
+                    </div>
+                </a>
+            </div> 
+
+            <div class="urunler" id="k4">
+                <a href="sayfa5.html">
+                    <img class="urunler" src="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\4.jfif" / >
+                    <p class="tanıtım"> I'M AN ARTWORK <br> $155.00 </p>
+                </a>
+                <a href="">
+                    <div class="gkutu" id="g1">
+                        <p class="sepet"> SEPETE EKLE </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="urunler" id="k5">
+                <a href="sayfa6.html">
+                    <img class="urunler" src="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\5.jfif" / >
+                    <p class="tanıtım"> I'M AN ARTWORK <br> $155.00 </p>
+                </a>
+                <a href="">
+                    <div class="gkutu" id="g1">
+                        <p class="sepet"> SEPETE EKLE </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="urunler" id="k6">
+                <a href="sayfa7.html"> 
+                    <img class="urunler" src="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\6.jfif" / >
+                    <p class="tanıtım"> I'M AN ARTWORK <br> $155.00 </p>
+                </a>
+                <a href="">
+                    <div class="gkutu" id="g1">
+                        <p class="sepet"> SEPETE EKLE </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="urunler" id="k7">
+                <a href="sayfa8.html">
+                    <img class="urunler" src="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\7.jfif" / >
+                    <p class="tanıtım"> I'M AN ARTWORK <br> $155.00 </p>
+                </a>
+                <a href="">
+                    <div class="gkutu" id="g1">
+                        <p class="sepet"> SEPETE EKLE </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="urunler" id="k8">
+                <a href="sayfa9.html">
+                    <img class="urunler" src="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\8.jfif" / >
+                    <p class="tanıtım"> I'M AN ARTWORK <br> $155.00 </p>
+                </a>
+                <a href="">
+                    <div class="gkutu" id="g1">
+                        <p class="sepet"> SEPETE EKLE </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="urunler" id="k9">
+                <a href="sayfa10.html"> 
+                    <img class="urunler" src="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\9.jfif" / >
+                    <p class="tanıtım"> I'M AN ARTWORK <br> $155.00 </p>
+                </a>
+                <a href="">
+                    <div class="gkutu" id="g1">
+                        <p class="sepet"> SEPETE EKLE </p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div id="hakkında">
+                <p style="margin-top: 190px; text-align: center; font-size: 90px; font-family: Courier New;" ><b>hakkında. </b></p>
+                <p style="margin-top: -80px; text-align: center; font-size: 25px; font-family: bring street art into your home ;" >I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click <br>
+                 “Edit Text” or double click me to add your own content and make changes to the font. <br>
+                  Feel free to drag and drop me anywhere you like on your page. I’m a great place for <br>
+                  you to tell a story and let your users know a little more about you. This is a great <br>
+                  space to write long text about your company and your services.</p>
+            </div>
+
+            <div id="iletişim" >
+                <p style="margin-top: 50px; text-align: center; font-size: 90px; font-family: Courier New;">  iletişim. </p>
+                <p style="margin-top: -80px; text-align: center; font-size: 25px; font-family: bring street art into your home ;" > T. 123 - 456 - 7890  | <a href="" id="mail"> atasaysgl@gmail.com  </a> </p>
+                <form name="ilt" action="" method="" >
+                    <table class="form">
+                        
+                        <tr> <td> <input type="text" name="name" class="formk" placeholder="AD"> </td></tr>
+                        <tr> <td> <input type="text" name="soyad" class="formk" placeholder="SOYAD"> </td></tr>
+                        <tr> <td> <input type="email" name="email" class="formk" placeholder="GMAİL"> </td></tr>
+                        <tr> <td> <textarea name="mesaj" class="formk" style=" height: 120px;" placeholder="MESAJ"></textarea> </td></tr>
+                        
+                    </table>
+                    <div class="button">
+                        <input type="submit" name="gonder" value="GÖNDER">
+                    </div>
+                    
+
+                </form>
+
+            </div>
+
+        </article>
+        
+        <footer class="footer">
+            <p id="cizgi">_______________________________</p>
+                <a href="https://m.facebook.com/login/?locale=tr_TR">
+                    <img src="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\fac.jpg" class="fibuton" style="margin-left: 880px;"> 
+                </a>
+
+                <a href="https://www.instagram.com/">
+                    <img src="C:\Users\atasa\çalışmalarım\ders\web tasarım\HTML\Sanat Mağazası\resim\inst.jpg" class="fibuton"> 
+                </a>
+
+        </footer>
+
+    </body>
+
+</html>
